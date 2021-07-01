@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Nunito+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Montserrat:wght@300;500;600&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -20,46 +20,40 @@ body .contenedor {
 }
 
 body .contenedor .nav {
-  position: fixed;
-  top: 0;
-  color: #fff;
-  font-family: "Nunito Sans", "sans-serif";
-  font-weight: 600;
-  font-size: 3em;
-}
-
-body .contenedor .nav .navTitulo {
-  font-family: "Castoro", "serif";
-  display: inline-block;
-  font-size: 0.7em;
-  margin: 1.5rem 0 0 20rem;
-}
-
-body .contenedor .nav .navNavegador {
   width: 100%;
   position: fixed;
-  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2.5rem 0 0 3.5rem;
 }
 
-body .contenedor .nav .navNavegador .navNavegadorContenedor {
-  margin-right: 20rem;
-}
-
-body .contenedor .nav .navNavegador .navNavegadorContenedor a {
-  color: #fff;
-  font-size: 0.4em;
-  margin: 2.5rem 1rem;
+body .contenedor .nav h1 {
   display: inline-block;
+  color: #d4d4d4;
+  font-family: "Castoro", serif;
+  font-size: 1.5em;
+  margin-bottom: 1.75rem;
+}
+
+body .contenedor .nav .navBotonera a {
+  display: block;
+  color: #d4d4d4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0.3rem 0.3rem;
+  margin-bottom: 0.2rem;
+  border-bottom: 0;
 }
 
 body .contenedor .divcontenido {
@@ -85,15 +79,39 @@ body .contenedor .inicio, body .contenedor .galeria {
   background-image: url(../media/bola.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  color: #eaeaea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
 }
 
-body .contenedor .inicio a, body .contenedor .galeria a {
-  text-decoration: none;
-  color: #fff;
+body .contenedor .inicio p, body .contenedor .galeria p {
+  margin-top: 5rem;
+}
+
+body .contenedor .botones {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1rem;
+}
+
+body .contenedor .botones img {
+  display: block;
+  width: 2rem;
+  opacity: 25%;
+  margin-top: 0.5rem;
 }
 
 body .contenedor .galeria {
+  background-color: #5c5c5c;
   background-image: none;
+}
+
+body .contenedor .galeria a {
+  font-size: 1.25rem;
+  color: #d4d4d4;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */
