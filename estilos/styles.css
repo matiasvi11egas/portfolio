@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Nunito+Sans:wght@300;600&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body .contenedor {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+body .contenedor .nav {
+  position: fixed;
+  top: 0;
+  color: #fff;
+  font-family: "Nunito Sans", "sans-serif";
+  font-weight: 600;
+  font-size: 3em;
+}
+
+body .contenedor .nav .navTitulo {
+  font-family: "Castoro", "serif";
+  display: inline-block;
+  font-size: 0.7em;
+  margin: 1.5rem 0 0 20rem;
+}
+
+body .contenedor .nav .navNavegador {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .contenedor .nav .navNavegador .navNavegadorContenedor {
+  margin-right: 20rem;
+}
+
+body .contenedor .nav .navNavegador .navNavegadorContenedor a {
+  color: #fff;
+  font-size: 0.4em;
+  margin: 2.5rem 1rem;
+  display: inline-block;
+}
+
+body .contenedor .divcontenido {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+body .contenedor .inicio, body .contenedor .galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../media/bola.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+body .contenedor .inicio a, body .contenedor .galeria a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body .contenedor .galeria {
+  background-image: none;
+}
+/*# sourceMappingURL=styles.css.map */
