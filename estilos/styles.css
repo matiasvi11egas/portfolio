@@ -22,7 +22,7 @@ body .contenedor {
 }
 
 body .contenedor .nav {
-  width: 100%;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
@@ -58,6 +58,7 @@ body .contenedor .nav .navBotonera a {
   padding: 0.3rem 0.3rem;
   margin-bottom: 0.2rem;
   border-bottom: 0;
+  z-index: 2000;
 }
 
 body .contenedor .divcontenido {
@@ -98,6 +99,7 @@ body .contenedor .botones {
   bottom: 1.5rem;
   right: 1rem;
   margin-bottom: 10vh;
+  z-index: 100;
 }
 
 body .contenedor .botones img {
@@ -112,6 +114,7 @@ body .contenedor .galeria {
   background-image: none;
   text-align: center;
   display: block;
+  z-index: 50;
 }
 
 body .contenedor .galeria .divcontenidoGrid {
@@ -119,7 +122,7 @@ body .contenedor .galeria .divcontenidoGrid {
   position: absolute;
   display: -ms-grid;
   display: grid;
-  z-index: 20;
+  z-index: 50;
       grid-template-areas: "simon hombre indio" "simon hombre indio" "charly ratas kurt" "charly galeria kurt" "desolacion galeria kurt" "desolacion invitro2 invitro1";
   -ms-grid-columns: 2fr 2fr 2fr;
       grid-template-columns: 2fr 2fr 2fr;
@@ -259,7 +262,7 @@ body .contenedor .galeria .galeriaEscrituras {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  z-index: 2000;
+  z-index: 100;
 }
 
 body .contenedor .galeria .galeriaEscrituras .galeriaTitulo {

@@ -41,7 +41,7 @@ body{
                     padding: 0.3rem 0.3rem;
                     margin-bottom: 0.2rem;
                     border-bottom: 0;
-                    
+                    z-index: 2000;
                 }
             }
         }
@@ -73,6 +73,7 @@ body{
             bottom: 1.5rem;
             right: 1rem;
             margin-bottom: 10vh;
+            z-index: 100;
             img{
                 display: block;
                 width: 2rem;
@@ -86,12 +87,13 @@ body{
             background-image: none;
             text-align: center;
             display: block;
+            z-index: 50;
             
             .divcontenidoGrid{
                 background-color: #5c5c5c;
                 position: absolute;
                 display: grid;
-                z-index: 20;
+                z-index: 50;
                 grid-template-areas:
                 "simon hombre indio"
                 "simon hombre indio"
@@ -187,7 +189,7 @@ body{
                 justify-content: space-between;
                 flex-direction: column;
                 position: relative;
-                z-index: 2000;
+                z-index: 100;
                 .galeriaTitulo{
                     width: 12.5rem;
                 }
