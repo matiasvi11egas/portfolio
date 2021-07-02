@@ -34,6 +34,6 @@ logs
 *.sql
 
 # mis carpetas
-
+/recursos
 
 
