@@ -11,6 +11,8 @@ body a {
 }
 
 body .contenedor {
+  position: relative;
+  top: 0;
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
@@ -21,7 +23,9 @@ body .contenedor {
 
 body .contenedor .nav {
   width: 100%;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,25 +97,177 @@ body .contenedor .botones {
   position: fixed;
   bottom: 1.5rem;
   right: 1rem;
+  margin-bottom: 10vh;
 }
 
 body .contenedor .botones img {
   display: block;
   width: 2rem;
-  opacity: 25%;
+  opacity: 75%;
   margin-top: 0.5rem;
 }
 
 body .contenedor .galeria {
-  background-color: #5c5c5c;
+  background-color: #d4d4d4;
   background-image: none;
+  text-align: center;
+  display: block;
 }
 
-body .contenedor .galeria a {
+body .contenedor .galeria .divcontenidoGrid {
+  background-color: #5c5c5c;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  z-index: 20;
+      grid-template-areas: "simon hombre indio" "simon hombre indio" "charly ratas kurt" "charly galeria kurt" "desolacion galeria kurt" "desolacion invitro2 invitro1";
+  -ms-grid-columns: 2fr 2fr 2fr;
+      grid-template-columns: 2fr 2fr 2fr;
+  -ms-grid-rows: 2fr 2fr 2fr 0fr 0.1fr 3fr;
+      grid-template-rows: 2fr 2fr 2fr 0fr 0.1fr 3fr;
+  height: 90%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom: 0.1rem solid #000000c5;
+}
+
+body .contenedor .galeria .divcontenidoGrid a {
   font-size: 1.25rem;
-  color: #d4d4d4;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  margin-top: 5rem;
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  background-color: #a2a2a2;
+  z-index: 100;
+  border-width: 0 0 0.15rem 0.1rem;
+  border-style: solid;
+  border-color: #000000c5;
+}
+
+body .contenedor .galeria .divcontenidoGrid img {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  padding: 0.5rem;
+  background-color: #d4d4d4;
+  border-width: 0 0.15rem 0.15rem 0;
+  border-style: solid;
+  border-color: #000000c5;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaEnlace {
+  grid-area: "galeria";
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaSimon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: simon;
+  margin: auto;
+  margin-bottom: 0.1rem;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaHombre {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: hombre;
+  margin: auto;
+  margin-bottom: 0.1rem;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaIndio {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: indio;
+  margin: auto;
+  margin-bottom: 0.75rem;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaCharly {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: charly;
+  margin: auto;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaRatas {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: ratas;
+  margin: auto;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaKurt {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: kurt;
+  margin: auto;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaDesolacion {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: desolacion;
+  margin: auto;
+  margin-top: 0.25rem;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaInvitro2 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: invitro2;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+body .contenedor .galeria .divcontenidoGrid .galeriaInvitro {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: invitro1;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+body .contenedor .galeria .galeriaEscrituras {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 2000;
+}
+
+body .contenedor .galeria .galeriaEscrituras .galeriaTitulo {
+  width: 12.5rem;
+}
+
+body .contenedor .galeria .galeriaEscrituras .firma {
+  width: 6rem;
+  bottom: 0;
 }
 /*# sourceMappingURL=styles.css.map */
