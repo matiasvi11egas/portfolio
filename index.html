@@ -3,19 +3,16 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Matías Villegas</title>
+    <title>Matías Villegas - Dibujante y s</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Dibujante retratista principiante en desarrollo web, conocé mis obras y contactame">
+    <meta name="keywords" content="dibujante, argentina, html, css, scss, ">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
-
+    
 </head>
 <body>
     <div class="contenedor">
-        
-        <div class="divcontenido inicio" id="inicio">
-            <p class="subtitulo">dibujante.</p>
-        </div>
-
         <div class="nav">
             <div class="navTituloyfirma">
                 <img src="media/firma1.png">
@@ -23,31 +20,72 @@
             </div>
             <div class="navBotonera">
                 <a href="#inicio">inicio</a>
-                <a href="#galeria">galería</a>
+                <a href="pages/galeria.html">galería</a>
                 <a href="pages/sobre-mi.html">sobre mí</a>
                 <a href="pages/contacto.html" class="contacto">contacto</a>
             </div>
         </div>
-        
-        <div class="botones">
-            <a href="#inicio" class="boton1"><img src="media/boton.png"></a>
-            <a href="#galeria" class="boton2"><img src="media/boton.png"></a>
+
+        <div class="divcontenido inicio" id="inicio">
+            <p class="subtitulo">dibujante.</p>
         </div>
 
-        <div class="divcontenido galeria" id="galeria">
+        <div class="divcontenido inicioGaleria" id=galeria>
             <div class="galeriaBocetos">
-                <img src="media/charly-habano125.jpg">
-                <img src="media/indio125.jpg">
+                <img srcset="media/charly-habano125.jpg 125w,
+                                media/charly-habano175.jpg 175w,
+                                media/charly-habano400.jpg 400w"
+                    sizes="(max-width: 768px) 125px,
+                            (max-width: 1024px) 175px, 
+                            400px"
+                    src="media/charly-habano400.jpg" alt="dibujo Charly García">
+
+                <img srcset="media/indio125.jpg 125w,
+                            media/indio175.jpg 175w,
+                            media/indio400.jpg 400w"
+                    sizes="(max-width: 768px) 125px,
+                            (max-width: 1024px) 175px, 
+                            400px"
+                    src="media/indio400.jpg" alt="dibujo Indio Solari">
+
             </div>
             <div class="galeriaBocetos">
-                <img src="media/kurt125.jpg">
-                <img src="media/simon125.jpg">
+                <img srcset="media/kurt125.jpg 125w,
+                            media/kurt175.jpg 175w,
+                            media/kurt400.jpg 400w"
+                    sizes="(max-width: 768px) 125px,
+                            (max-width: 1024px) 175px, 
+                            400px"
+                    src="media/kurt400.jpg" alt="dibujo Kurt Cobain">
+
+                <img srcset="media/simon125.jpg 125w,
+                            media/simon175.jpg 175w,
+                            media/simon400.jpg 400w"
+                    sizes="(max-width: 768px) 125px,
+                            (max-width: 1024px) 175px, 
+                            400px"
+                    src="media/simon400.jpg" alt="dibujo Simón Poxyran">
+                    
             </div>
             <div class="galeriaBocetos">
-                <img src="media/desolacion125p.jpg">
-                <img src="media/invitro125p.jpg">
+                <img srcset="media/desolacion125p.jpg 125w,
+                            media/desolacion175.jpg 175w,
+                            media/desolacion400.jpg 400w"
+                    sizes="(max-width: 768px) 125px,
+                            (max-width: 1024px) 175px, 
+                            400px"
+                    src="media/desolacion400.jpg" alt="dibujo Matias Villegas">
+                    
+                <img srcset="media/invitro125p.jpg 125w,
+                            media/invitro175.jpg 175w,
+                            media/invitro400.jpg 400w"
+                    sizes="(max-width: 768px) 125px,
+                            (max-width: 1024px) 175px, 
+                            400px"
+                    src="media/invitro400.jpg" alt="dibujo Matias Villegas">
+
             </div>
-            <div class="galeriaEscrituras">
+            <div class="galeriaEnlace">
                 <a href="pages/galeria.html" class="galeriaEnlace">ver galeria</a>
             </div>
         </div>
