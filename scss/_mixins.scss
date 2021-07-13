@@ -1,0 +1,82 @@
+@mixin navmobile{
+    top: 0;
+    left: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;  
+    align-items: flex-start; 
+    padding: 2rem 3rem;
+    z-index: 175;
+    .navTituloyfirma{
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid $grisoscuro;
+        padding: 0 1rem 1rem 0.25rem;
+        img{
+            width: 3rem;
+            display: inline-block;
+            margin-right: 1vh;
+        }
+        h1{
+            margin: 0;
+            display: inline-block;
+            color: $gris1;
+            font-family: $castoro;
+            font-size: 1.75em;
+        }
+    }
+    .navBotonera{
+        a{
+            display: block;
+            color: $gris1;
+            font-size: 1.25em;
+            font-family: $montserrat;
+            font-weight: 500;
+            padding: 0.3rem 0.3rem;
+            margin-bottom: 0.2rem;
+            border-bottom: 0;
+        }
+    }
+}
+
+@mixin navtablet{
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    margin-left: 0rem;
+    width: 100%;
+    margin: 2rem 0; 
+    padding: 1rem 1.25rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    .navTituloyfirma{
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+    .navBotonera{
+        flex-direction: row;
+        display: inline-block;
+        justify-content: space-between;
+        align-items: right;
+        a{
+            display: inline-block;
+            padding: 1rem;
+            margin-bottom: 0rem;
+            bottom: auto;
+            margin-top: 1.2rem;
+            transition: all 0.2s ease-in-out;
+            border-radius: 5px;
+            &:hover{
+                color: $gris2;
+                background-color: $grisoscuro;
+            }
+        }
+    }
+}
+
+@mixin navdesktop{
+    padding: 1rem 20.5rem 0;
+}
